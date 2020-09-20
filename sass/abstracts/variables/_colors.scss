@@ -1,0 +1,27 @@
+$t-primary: #ffb90f;
+$t-secondary: #cd6600;
+$t-tertiarty: #6a1d2f;
+$t-black: #303030;
+$t-white: #ffffff;
+$t-grey: #f0f8ff;
+
+$color__background-body: $t-white;
+$color__background-screen: $t-white;
+$color__background-hr: $t-grey;
+$color__background-button: $t-secondary;
+$color__background-pre: $t-grey;
+$color__background-ins: $t-grey;
+
+$color__text-screen: $t-primary;
+$color__text-input: $t-black;
+$color__text-input-focus: $t-black;
+$color__link: $t-primary;
+$color__link-visited: $t-primary;
+$color__link-hover: darken($t-primary, 20%);
+$color__text-main: $t-black;
+
+$color__border-button: $t-secondary;
+$color__border-button-hover: $t-secondary;
+$color__border-button-focus: $t-secondary;
+$color__border-input: $t-grey;
+$color__border-abbr: $t-grey;
