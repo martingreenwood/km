@@ -17,22 +17,7 @@ get_header();
             while ( have_posts() ):
                 the_post();
 
-                /* grab the url for the full size featured image */
                 $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
-
-                ?>
-                <div class="hero">
-                    <div class="hero__background" data-bg="<?php echo $featured_img_url ?>"></div>
-
-                    <div class="hero__inner">
-                        <div class="hero__inner--branding">
-                        <?php
-                            echo wp_get_attachment_image( get_theme_mod( 'custom_logo' ), 'full' );
-                        ?>
-                        </div>
-                    </div>
-                </div>
-                <?php
 
             endwhile;
         endif;

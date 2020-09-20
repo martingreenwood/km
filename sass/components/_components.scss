@@ -1,3 +1,15 @@
+/* Header
+--------------------------------------------- */
+@import "header/site-header";
+
+/* Initials
+--------------------------------------------- */
+@import "header/site-initials";
+
+/* Dates
+--------------------------------------------- */
+@import "header/site-date";
+
 /* Navigation
 --------------------------------------------- */
 @import "navigation/navigation";
@@ -5,10 +17,6 @@
 /* Posts and pages
 --------------------------------------------- */
 @import "content/posts-and-pages";
-
-/* Comments
---------------------------------------------- */
-@import "comments/comments";
 
 /* Widgets
 --------------------------------------------- */
