@@ -129,7 +129,9 @@ add_action( 'widgets_init', 'km_widgets_init' );
  */
 function km_scripts() {
 	wp_enqueue_style( 'km-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_script( 'base', get_stylesheet_directory_uri() . '/js/base.js', array('jquery'), _S_VERSION, false);
+
+	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'base', get_stylesheet_directory_uri() . '/js/base.js', array('jquery'), _S_VERSION, true);
 }
 add_action( 'wp_enqueue_scripts', 'km_scripts' );
 
