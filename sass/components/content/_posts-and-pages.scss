@@ -516,7 +516,8 @@
 
         .entry-header {
             text-align: center;
-            margin-bottom: rem-calc(80);
+            margin-top: rem-calc(80);
+            margin-bottom: rem-calc(40);
 
             .entry-title {
                 font-size: 5vw;
@@ -528,10 +529,17 @@
         }
 
         .entry-content {
+
             h4 {
-                font-size: rem-calc(90);
-                line-height: 1.1;
-                padding: 0 rem-calc(100)
+                font-size: rem-calc(22);
+                line-height: 1.2;
+                font-family: $font__main;
+                padding: 0 rem-calc(10);
+                margin-bottom: rem-calc(40);
+
+                @include breakpoint(medium) {
+                    padding: 0 rem-calc(100);
+                }
             }
         }
 
