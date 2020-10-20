@@ -35,9 +35,3 @@ function km_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'km_pingback_header' );
-
-
-/**
- * Remove admin bar
- */
-show_admin_bar(false);

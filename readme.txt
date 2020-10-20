@@ -14,7 +14,7 @@ A starter theme called km.
 
 == Description ==
 
-Description
+A theme for K&M.
 
 == Installation ==
 

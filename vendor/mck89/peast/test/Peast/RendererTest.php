@@ -5,7 +5,7 @@ class RendererTest extends TestBase
 {
     protected function getTestVersions()
     {
-        return array("ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020");
+        return array("ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020", "ES2021");
     }
     
     public function jsParserTestFilesProvider()
@@ -42,12 +42,11 @@ class RendererTest extends TestBase
         $this->assertEquals($cmTest, $cm);
         $this->assertEquals($exTest, $ex);
     }
-    
-    /**
-     * @expectedException \Exception
-     */
+
     public function testExceptionOnMissingFormatter()
     {
+        $this->expectException('Exception');
+
         $tree = \Peast\Peast::latest("")->parse();
         $renderer = new \Peast\Renderer;
         $this->assertEquals(null, $renderer->getFormatter());

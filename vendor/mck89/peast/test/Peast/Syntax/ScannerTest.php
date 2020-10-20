@@ -1,7 +1,9 @@
 <?php
 namespace Peast\test\Syntax;
 
-class ScannerTest extends \Peast\test\TestBase
+use Peast\test\TestBase;
+
+class ScannerTest extends TestBase
 {
     public function testSourceEncodingConversion()
     {
@@ -15,12 +17,11 @@ class ScannerTest extends \Peast\test\TestBase
             $this->assertEquals($UTF8Char, $str);
         }
     }
-    
-    /**
-     * @expectedException \Peast\Syntax\EncodingException
-     */
+
     public function testExceptionOnInvalidUTF8()
     {
+        $this->expectException('Peast\Syntax\EncodingException');
+
         $UTF8Char = chr(0xc2) . chr(0xb0);
         $source = "'" . $UTF8Char . $UTF8Char[0] . "'";
         \Peast\Peast::latest($source)->parse();
