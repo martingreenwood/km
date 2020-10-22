@@ -11,22 +11,32 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'km' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'km' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'km' ), 'km', '<a href="https://martingreenwood.com">Martin Greenwood</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer class="site-footer">
+
+		<div class="site-footer--wrap">
+
+			<div class="the-credits">
+				<header>The Credits</header>
+				<p>Development - <a href="https://martingreenwood.com">Martin Greenwood</a>
+				<p>Photography - <a href="https://thereeljp.com/">Jack Pope</a>
+			</div>
+
+			<div class="the-reminder">
+				<header>The Reminder</header>
+				<span>Saturday<br>
+				November 5th<br>
+				2022</span>
+				<a href="#" class="rsvp-trigger">RSVP</a>
+			</div>
+
+			<div class="site-footer--pumpkins rellax"></div>
+
+		</div>
+
+		<a href="#" class="scroll scroll--up">scroll up</a>
+	</footer>
+
+</div>
 
 <?php wp_footer(); ?>
 

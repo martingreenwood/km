@@ -1,21 +1,29 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.rvsp-panel--form .gform_wrapper .gform_footer input.button,
+.rvsp-panel--form .gform_wrapper .gform_footer input[type=submit],
+.rvsp-panel--form .gform_wrapper .gform_page_footer input.button,
+.rvsp-panel--form .gform_wrapper .gform_page_footer input[type=submit] {
 	border: 1px solid;
-	border-color: $color__border-button;
+	border-color: $t-tertiarty;
 	border-radius: 3px;
-	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
+	background: transparent;
+	color: $t-tertiarty;
 	line-height: 1;
-	padding: 0.6em 1em 0.4em;
+	padding: 10px 20px;
+	font-family: $font__main__heading;
+	font-weight: 500;
+	font-size: 16px;
 
-	&:hover {
-		border-color: $color__border-button-hover;
-	}
-
+	&:hover,
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
+		border-color: $t-tertiarty;
+		background-color: $t-tertiarty;
+		color: white;
+		outline: 0;
+		box-shadow: none;
 	}
 }

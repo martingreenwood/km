@@ -5,4 +5,13 @@ h4,
 h5,
 h6 {
 	clear: both;
+	margin: 0;
+	font-weight: 300;
+	font-family: $font__heading;
+	font-size: clamp(6rem, 36vw, 26rem);
+	line-height: 0.7;
+
+	@include breakpoint(medium) {
+		font-size: clamp(16rem, 27vw, 22rem);
+	}
 }
